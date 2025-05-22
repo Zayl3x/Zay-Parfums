@@ -1,80 +1,71 @@
 body {
   margin: 0;
-  font-family: 'Georgia', serif;
-  background-color: #f4f0ea;
-  color: #2c2c2c;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
 }
 
-header nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-  background-color: #f4f0ea;
-  font-weight: bold;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 40px;
-  margin: 0;
-  padding: 0;
-}
-
-.cart-icon {
-  font-size: 24px;
-}
-
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 60px 40px;
-}
-
-.hero-text h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.hero-text button {
-  padding: 10px 20px;
-  border: 1px solid #2c2c2c;
-  background: transparent;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.hero img {
-  height: 250px;
-}
-
-main {
+header {
   text-align: center;
+  padding: 60px 20px;
+  background-color: #eaeaea;
+}
+
+header h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+header p {
+  font-size: 20px;
+  color: #777;
+}
+
+.perfumes {
   padding: 40px;
+  text-align: center;
 }
 
-main h2 {
-  font-size: 28px;
-  margin-bottom: 40px;
+.perfumes h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
 }
 
-.products {
+.galeria {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.product img {
-  height: 150px;
-  margin-bottom: 10px;
+.item {
+  width: 220px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.item p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #444;
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 30px;
-  background-color: #eeeae4;
-  font-size: 14px;
+  background-color: #eaeaea;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
 }
+
